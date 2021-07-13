@@ -1,9 +1,18 @@
-import React from "react";
-import { hot } from 'react-hot-loader/root';
-class App extends React.Component {    
-   render() {   
-      const { name } = this.props; 
-      return (<><h1> 2021 {name}</h1></>);
-   }
+import React from 'react';
+import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+import '../node_modules/react-notifications/lib/notifications.css';
+import "react-datepicker/dist/react-datepicker.css";
+import PageRoutes from './routes/pageRoutes';
+import './App.scss';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <PageRoutes />
+      </div>
+    );
+  }
 }
-export default hot(App);
+
+export default App;
